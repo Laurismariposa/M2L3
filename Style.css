@@ -1,11 +1,33 @@
 body {
     font-family: Arial,  sans-serif; /* Familia de fuentes */
-    font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #f0f0f0; /* El color del fondo de la página web */
-    color: #333333; /* El color del texto*/ 
+    font-size: 50px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #fffcfc; /* El color del fondo de la página web */
+    color: #023f4e; /* El color del texto*/ 
+    text-decoration-color: 	#EE82EE;
+    border: 10px;
+    border-color: #8A2BE2;
+    
+
+
+}
+@keyframes color-change {
+  0%   { color: rgb(255, 0, 200); }
+  50%  { color: rgb(3, 66, 75); }
+  100% { color: rgb(68, 0, 255); }
 }
 h1 {
-    color: #00a800; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    color: #00FFFF; /* El color de la cabecera */
+    font-size: 40px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color-change 3s infinite;
+    }
+@keyframes size-change {
+  0%   { width: 400px; height: 400px; }
+  50%  { width: 600px; height: 600px; }
+  100% { width: 400px; height: 400px; }
+}
+img{
+        width: 200px;
+        height: 200px;
+        animation: size-change 4s infinite;
     }
